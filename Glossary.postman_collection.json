@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "2db972c3-ba87-44a9-bb6a-b7b1b1b77ac1",
+		"name": "Glossary",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Glosarry Resource",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ya29.c.b0Aa9VdyluCumxjPxfY0GzgNhpjQyTRKvUmg9aYukJFLK3lR-xC59jHLzAWaKCnMb-a_4jzhrbmdSX69YqWPJvE3ZxA_mGop2NMiKVtJQwmMJwE34I7s5zJPSScMyF2mCUsc1BSlQsPRUXk8Hv0A0dw2R5lQgdiU84l0_KpyArls-oNamU5x-ITi0clc9NHGxhUANu0pddHC3odzKi7wTC7O0R2tq0fIIL232Df-Vk712iw6ed5Ye8_fiwgt5MJa3oO_9Y-Fbnb_QSQWbbO5scMiYVSz9-oyf0Uc2Ojt1pn4k1WwbYgeZZ1R24g7_SX9yB7g707U38wyw7_eiXX_0-8wdzfOxwqXQcMwYmjM35q9sU6r5XsJyo1Q3uuiV85IS1ugpS3vog-YrlWbU9vJ0hRmk99-hieXwUFXiUcvXr7OBFuI2UnBYWoJjvWfMf03gg_9QUuoZ7JQpSe_Jw3JOYpIt8ko602X7x36YzSqckZmMRjykwtm-Vhr9ygcVV6gav2ufIQ61ubd4434R6ZjFVn4wbymBZjU0JmYejJX4jgvIVcZuqMqxidcI3xSWQs0mmio4e1yk44ptQXjsp-cJItiWxzxSUp39n0kmJMFFo3r2MYV5bVdJ1RO68tfwUfvrzV6Jl55_3e2W-d3csMURjIzSfi-xahvOnmohXlz3cUQQh1cyXQjB_-9ZR9jUOebicYStIduhxveiVRxUqe70in0gq0jhSqc0jlc9WmuJQZez6ay6zBpdgeo8VXRVgxip0JOMkqtR1yetMeMYw1kX3h_Fp2Ww_cSS0fykoql6fvlOn6oxmj01j-kfax_sMk858a_q8pdJYBMXg0wbhI_3irkWYhRXB5xdq5jzlxIVmeXFldJF-5azdlRJXtgbaUlF_-a1kvw_kam_--gtpsZV521xYpeV0asmWUMukR4Y_1or8J1VojUjpnrfqJvFFzhlFqU62FWhw-MJqu5nZSoUejIj1Fxdjm3edj9nwUYtB26RUaq3qrgbUIxo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"projects/532750601276/locations/us-central1/glossaries/glossary-1\",\r\n    \"languageCodesSet\": {\r\n        \"languageCodes\": [\r\n            \"en\",\r\n            \"es\",\r\n            \"de\",\r\n            \"in\",\r\n            \"ar\",\r\n            \"mi\"\r\n        ]\r\n    },\r\n    \"inputConfig\": {\r\n        \"gcsSource\": {\r\n            \"inputUri\": \"gs://translation_glossary_dnyanesh/equivalent_term_set.csv\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://translation.googleapis.com/v3/projects/532750601276/locations/us-central1/glossaries",
+					"protocol": "https",
+					"host": [
+						"translation",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3",
+						"projects",
+						"532750601276",
+						"locations",
+						"us-central1",
+						"glossaries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Glosarry Resource Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ya29.c.b0Aa9VdyluCumxjPxfY0GzgNhpjQyTRKvUmg9aYukJFLK3lR-xC59jHLzAWaKCnMb-a_4jzhrbmdSX69YqWPJvE3ZxA_mGop2NMiKVtJQwmMJwE34I7s5zJPSScMyF2mCUsc1BSlQsPRUXk8Hv0A0dw2R5lQgdiU84l0_KpyArls-oNamU5x-ITi0clc9NHGxhUANu0pddHC3odzKi7wTC7O0R2tq0fIIL232Df-Vk712iw6ed5Ye8_fiwgt5MJa3oO_9Y-Fbnb_QSQWbbO5scMiYVSz9-oyf0Uc2Ojt1pn4k1WwbYgeZZ1R24g7_SX9yB7g707U38wyw7_eiXX_0-8wdzfOxwqXQcMwYmjM35q9sU6r5XsJyo1Q3uuiV85IS1ugpS3vog-YrlWbU9vJ0hRmk99-hieXwUFXiUcvXr7OBFuI2UnBYWoJjvWfMf03gg_9QUuoZ7JQpSe_Jw3JOYpIt8ko602X7x36YzSqckZmMRjykwtm-Vhr9ygcVV6gav2ufIQ61ubd4434R6ZjFVn4wbymBZjU0JmYejJX4jgvIVcZuqMqxidcI3xSWQs0mmio4e1yk44ptQXjsp-cJItiWxzxSUp39n0kmJMFFo3r2MYV5bVdJ1RO68tfwUfvrzV6Jl55_3e2W-d3csMURjIzSfi-xahvOnmohXlz3cUQQh1cyXQjB_-9ZR9jUOebicYStIduhxveiVRxUqe70in0gq0jhSqc0jlc9WmuJQZez6ay6zBpdgeo8VXRVgxip0JOMkqtR1yetMeMYw1kX3h_Fp2Ww_cSS0fykoql6fvlOn6oxmj01j-kfax_sMk858a_q8pdJYBMXg0wbhI_3irkWYhRXB5xdq5jzlxIVmeXFldJF-5azdlRJXtgbaUlF_-a1kvw_kam_--gtpsZV521xYpeV0asmWUMukR4Y_1or8J1VojUjpnrfqJvFFzhlFqU62FWhw-MJqu5nZSoUejIj1Fxdjm3edj9nwUYtB26RUaq3qrgbUIxo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"projects/532750601276/locations/us-central1/glossaries/glossary-2\",\r\n    \"languageCodesSet\": {\r\n        \"languageCodes\": [\r\n            \"fr\",\r\n            \"en\"\r\n        ]\r\n    },\r\n    \"inputConfig\": {\r\n        \"gcsSource\": {\r\n            \"inputUri\": \"gs://translation_glossary_dnyanesh/translation_bistro_glossary.csv\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://translation.googleapis.com/v3/projects/532750601276/locations/us-central1/glossaries",
+					"protocol": "https",
+					"host": [
+						"translation",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3",
+						"projects",
+						"532750601276",
+						"locations",
+						"us-central1",
+						"glossaries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ya29.c.b0Aa9VdyluCumxjPxfY0GzgNhpjQyTRKvUmg9aYukJFLK3lR-xC59jHLzAWaKCnMb-a_4jzhrbmdSX69YqWPJvE3ZxA_mGop2NMiKVtJQwmMJwE34I7s5zJPSScMyF2mCUsc1BSlQsPRUXk8Hv0A0dw2R5lQgdiU84l0_KpyArls-oNamU5x-ITi0clc9NHGxhUANu0pddHC3odzKi7wTC7O0R2tq0fIIL232Df-Vk712iw6ed5Ye8_fiwgt5MJa3oO_9Y-Fbnb_QSQWbbO5scMiYVSz9-oyf0Uc2Ojt1pn4k1WwbYgeZZ1R24g7_SX9yB7g707U38wyw7_eiXX_0-8wdzfOxwqXQcMwYmjM35q9sU6r5XsJyo1Q3uuiV85IS1ugpS3vog-YrlWbU9vJ0hRmk99-hieXwUFXiUcvXr7OBFuI2UnBYWoJjvWfMf03gg_9QUuoZ7JQpSe_Jw3JOYpIt8ko602X7x36YzSqckZmMRjykwtm-Vhr9ygcVV6gav2ufIQ61ubd4434R6ZjFVn4wbymBZjU0JmYejJX4jgvIVcZuqMqxidcI3xSWQs0mmio4e1yk44ptQXjsp-cJItiWxzxSUp39n0kmJMFFo3r2MYV5bVdJ1RO68tfwUfvrzV6Jl55_3e2W-d3csMURjIzSfi-xahvOnmohXlz3cUQQh1cyXQjB_-9ZR9jUOebicYStIduhxveiVRxUqe70in0gq0jhSqc0jlc9WmuJQZez6ay6zBpdgeo8VXRVgxip0JOMkqtR1yetMeMYw1kX3h_Fp2Ww_cSS0fykoql6fvlOn6oxmj01j-kfax_sMk858a_q8pdJYBMXg0wbhI_3irkWYhRXB5xdq5jzlxIVmeXFldJF-5azdlRJXtgbaUlF_-a1kvw_kam_--gtpsZV521xYpeV0asmWUMukR4Y_1or8J1VojUjpnrfqJvFFzhlFqU62FWhw-MJqu5nZSoUejIj1Fxdjm3edj9nwUYtB26RUaq3qrgbUIxo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://translation.googleapis.com/v3/projects/532750601276/locations/us-central1/operations/20221214-02021671012176-639403b4-0000-239f-8560-001a1148dc4e",
+					"protocol": "https",
+					"host": [
+						"translation",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v3",
+						"projects",
+						"532750601276",
+						"locations",
+						"us-central1",
+						"operations",
+						"20221214-02021671012176-639403b4-0000-239f-8560-001a1148dc4e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "translate-with-glossary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "goat cheese"
+				},
+				"url": {
+					"raw": "http://localhost:8080/translate-with-glossary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"translate-with-glossary"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
